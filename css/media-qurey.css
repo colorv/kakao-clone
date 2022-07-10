@@ -9,7 +9,7 @@
   }
 
   .login-header {
-    margin: 150px 0px 0px 0px;
+    margin: 100px 0px 0px 0px;
   }
 
   .login-header__title {
@@ -71,7 +71,7 @@
     display: none;
   }
   .login-header {
-    margin-bottom: 70px;
+    margin: 0px 0px 50px 0px;
   }
   #chat-screen,
   .chat-color {
