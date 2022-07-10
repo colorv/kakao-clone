@@ -1,0 +1,33 @@
+/* Up and Rotation - use nav-bar */
+
+@keyframes upAndRotation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.up-rotation {
+  animation: upAndRotation 2s ease-in-out;
+  animation-delay: 1s;
+}
+
+/* 360degree rotation - use status-bar */
+
+@keyframes infiniteRotation {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.infinite-rotation:hover {
+  animation: infiniteRotation 1.5s linear infinite;
+}

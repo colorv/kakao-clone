@@ -1,0 +1,152 @@
+.main-chat {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat__timestamp {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin: 10px auto 10px auto;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 40%;
+  margin-right: 10px;
+}
+
+.message-row__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.message__author {
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 5px;
+}
+
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message__text {
+  font-size: 18px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  margin-right: 10px;
+}
+
+.message__time {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+
+.message-row--own .message__text {
+  background-color: var(--yellow);
+  /*   (border-radius도 4개의 값을 줄 수 있다.)
+  border-top-right-radius: 0px;
+  border-top-left-radius: 15px; */
+  border-radius: 15px 0px 15px 15px;
+  margin: 0px 0px 0px 10px;
+}
+
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: white;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+.reply .reply__column:first-child {
+  width: 10%;
+}
+
+.reply .reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.reply__column input {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.reply__column input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: 3px;
+  top: 2.5px;
+}
+
+.reply__column:last-child > i {
+  right: 50px;
+  top: 12px;
+}
+
+.reply__column button {
+  background-color: var(--yellow);
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.reply .reply__column:first-child,
+.reply .fa-laugh-beam,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-laugh-beam,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  width: 98vw;
+  transform: translateX(-13%) translateY(-80px);
+}
+
+.reply:focus-within {
+  transform: translateY(80px);
+}

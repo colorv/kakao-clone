@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to kakao Talk</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="mobile-page">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span>No Service</span>
+          <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+          <span>15:32</span>
+        </div>
+        <div class="status-bar__column">
+          <span>10%</span>
+          <i class="fas fa-battery-quarter fa-lg"></i>
+          <i class="fas fa-bolt fa-xs"></i>
+        </div>
+      </div>
+      <header class="login-header">
+        <h1 class="login-header__title">kakaoTalk</h1>
+      </header>
+
+      <main class="main-screen">
+        <form id="login-form" action="friends.html" method="get">
+          <input
+            name="username"
+            type="text"
+            placeholder="카카오계정 (이메일 또는 전화번호)"
+            value="hello2022@kakaotalk.com"
+          />
+          <input
+            name="password"
+            type="password"
+            placeholder="비밀번호"
+            value="1234567890"
+          />
+
+          <div class="stay-login">
+            <input type="checkbox" name="asd" id="123" />
+            <label for="123"
+              ><i class="far fa-check-circle fa-lg"></i>로그인 상태 유지</label
+            >
+          </div>
+          <input type="submit" value="로그인" />
+
+          <div class="horizon-center-text">
+            <div class="horizon-center-text__border"></div>
+            <div class="horizon-center-text__title">또는</div>
+            <div class="horizon-center-text__border"></div>
+          </div>
+        </form>
+
+        <a class="qr-login" href="#.html"
+          ><i class="fas fa-qrcode fa-lg"></i>QR코드로 로그인</a
+        >
+
+        <div class="account">
+          <div class="account__column">
+            <a class="sign-up" href="#.html">회원가입</a>
+          </div>
+          <div class="account__column">
+            <a class="kakao-account" href="#.html">카카오계정</a>
+            <div class="text-vertical"></div>
+            <a class="find-password" href="#.html">비밀번호 찾기</a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div id="start-screen">
+      <i class="fas fa-comment fa-2x"></i>
+      <span>모바일 화면을 기준으로 제작되었습니다.</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

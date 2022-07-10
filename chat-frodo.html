@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>채팅 - Frodo</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body id="chat-screen">
+    <div class="mobile-page chat-color">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span>No Service</span>
+          <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+          <span>15:32</span>
+        </div>
+        <div class="status-bar__column">
+          <span>10%</span>
+          <i class="fas fa-battery-quarter fa-lg"></i>
+          <i class="fas fa-bolt fa-xs"></i>
+        </div>
+      </div>
+
+      <header class="alt-header">
+        <div class="alt-header__column">
+          <a href="chats.html">
+            <i class="fas fa-angle-left fa-2x"></i>
+          </a>
+        </div>
+        <div class="alt-header__column">
+          <h1 class="alt-header__title">Frodo</h1>
+        </div>
+        <div class="alt-header__column">
+          <span><i class="fas fa-search fa-lg"></i></span>
+          <span><i class="fas fa-bars fa-lg"></i></span>
+        </div>
+      </header>
+
+      <main class="main-screen main-chat fade-in">
+        <div class="chat__timestamp">2022년 1월 10일 월요일</div>
+
+        <div class="message-row fade-in--left delay-1s">
+          <img src="images/profile-img3.png" />
+          <div class="message-row__content">
+            <span class="message__author">Frodo</span>
+            <div class="message__info">
+              <span class="message__text">내일 몇시에 볼까?</span>
+              <span class="message__time">18:21</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="message-row message-row--own fade-in--right delay-2s">
+          <div class="message-row__content">
+            <div class="message__info">
+              <span class="message__text">오후 6시쯤 어때?</span>
+              <span class="message__time">18:22</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="message-row fade-in--left delay-3s">
+          <img src="images/profile-img3.png" />
+          <div class="message-row__content">
+            <span class="message__author">Frodo</span>
+            <div class="message__info">
+              <span class="message__text">좋아 신사역 6시에 보자</span>
+              <span class="message__time">18:22</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="message-row message-row--own fade-in--right delay-4s">
+          <div class="message-row__content">
+            <div class="message__info">
+              <span class="message__text">알았어. 내일보자</span>
+              <span class="message__time">18:23</span>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <form class="reply">
+        <div class="reply__column">
+          <i class="far fa-plus-square fa-lg"></i>
+        </div>
+        <div class="reply__column">
+          <input type="text" placeholder="Write a message" />
+          <i class="far fa-laugh-beam fa-lg"></i>
+          <button>
+            <i class="fas fa-arrow-up fa-lg"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

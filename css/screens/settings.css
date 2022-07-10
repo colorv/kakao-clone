@@ -1,0 +1,31 @@
+.settings__ul {
+  margin-bottom: 20px;
+}
+.settings__li {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+}
+
+.settings__li:first-child {
+  padding-top: 0px;
+}
+
+.settings__li:last-child {
+  border: none;
+}
+
+.settings__li i {
+  width: 25px;
+  text-align: center;
+}
+
+.settings__li span {
+  margin-left: 10px;
+}
+
+.status-text {
+  color: rgba(0, 0, 0, 0.3);
+}

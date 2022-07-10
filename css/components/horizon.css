@@ -1,0 +1,36 @@
+/* horizon - use Friends, Find, More .html*/
+.horizon__text {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0px;
+  padding: 15px 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.horizon__btn {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.horizon__text--black-color {
+  color: inherit;
+  font-weight: 600;
+  padding: 25px 0px;
+}
+
+/* horizon Center text - use index.html */
+.horizon-center-text {
+  display: flex;
+  margin: 20px 0px;
+}
+
+.horizon-center-text__border {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  width: 45%;
+  margin-top: 8px;
+}
+.horizon-center-text__title {
+  width: 10%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.2);
+}

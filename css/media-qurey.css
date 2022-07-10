@@ -1,0 +1,84 @@
+@media screen and (min-width: 420px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-header {
+    margin: 150px 0px 0px 0px;
+  }
+
+  .login-header__title {
+    margin: 0;
+  }
+
+  .mobile-page,
+  .status-bar,
+  .screen-header,
+  .alt-header,
+  .nav {
+    width: 420px;
+  }
+
+  .mobile-page {
+    position: relative;
+    height: 800px;
+    border: 5px solid black;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+
+  .status-bar,
+  .screen-header,
+  .alt-header {
+    position: absolute;
+  }
+  .main-screen {
+    margin-top: 120px;
+  }
+
+  .chat-color {
+    background-color: #abc1d1;
+  }
+
+  .nav {
+    position: absolute;
+  }
+
+  .reply {
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  body {
+    padding-top: 110px;
+  }
+  .mobile-page {
+    height: 120vh;
+    background-color: white;
+  }
+
+  .status-bar {
+    display: none;
+  }
+
+  #start-screen span {
+    display: none;
+  }
+  .login-header {
+    margin-bottom: 70px;
+  }
+  #chat-screen,
+  .chat-color {
+    background-color: #abc1d1;
+  }
+  .screen-header,
+  .alt-header {
+    top: 0;
+  }
+}
